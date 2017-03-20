@@ -61,6 +61,7 @@
             this.toolStripMenuItem_SelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_UnSelectAll = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem_SelectApply = new System.Windows.Forms.ToolStripMenuItem();
+            this.tabPage_FATEList = new System.Windows.Forms.TabPage();
             this.tabPage_Log = new System.Windows.Forms.TabPage();
             this.panel_LogCover = new System.Windows.Forms.Panel();
             this.richTextBox_Log = new System.Windows.Forms.RichTextBox();
@@ -70,6 +71,8 @@
             this.tabPage_Info = new System.Windows.Forms.TabPage();
             this.label_About = new System.Windows.Forms.Label();
             this.linkLabel_GitHub = new System.Windows.Forms.LinkLabel();
+            this.menuStrip_FATEList = new System.Windows.Forms.MenuStrip();
+            this.flowLayoutPanel_FATEList = new System.Windows.Forms.FlowLayoutPanel();
             this.contextMenuStrip.SuspendLayout();
             this.panel_TopSetting.SuspendLayout();
             this.tabControl.SuspendLayout();
@@ -78,6 +81,7 @@
             this.groupBox_DefaultSet.SuspendLayout();
             this.tabPage_FATE.SuspendLayout();
             this.menuStrip_FATETab.SuspendLayout();
+            this.tabPage_FATEList.SuspendLayout();
             this.tabPage_Log.SuspendLayout();
             this.panel_LogCover.SuspendLayout();
             this.menuStrip_LogTab.SuspendLayout();
@@ -221,6 +225,7 @@
             this.tabControl.Alignment = System.Windows.Forms.TabAlignment.Left;
             this.tabControl.Controls.Add(this.tabPage_Settings);
             this.tabControl.Controls.Add(this.tabPage_FATE);
+            this.tabControl.Controls.Add(this.tabPage_FATEList);
             this.tabControl.Controls.Add(this.tabPage_Log);
             this.tabControl.Controls.Add(this.tabPage_Info);
             this.tabControl.Dock = System.Windows.Forms.DockStyle.Fill;
@@ -369,7 +374,7 @@
             this.tabPage_FATE.Name = "tabPage_FATE";
             this.tabPage_FATE.Size = new System.Drawing.Size(426, 262);
             this.tabPage_FATE.TabIndex = 0;
-            this.tabPage_FATE.Text = "돌발";
+            this.tabPage_FATE.Text = "돌발 목록";
             // 
             // triStateTreeView_FATEs
             // 
@@ -417,6 +422,35 @@
             this.toolStripMenuItem_SelectApply.Size = new System.Drawing.Size(67, 20);
             this.toolStripMenuItem_SelectApply.Text = "적용하기";
             this.toolStripMenuItem_SelectApply.Click += new System.EventHandler(this.toolStripMenuItem_SelectApply_Click);
+            // 
+            // tabPage_FATEList
+            // 
+            this.tabPage_FATEList.BackColor = System.Drawing.Color.Transparent;
+            this.tabPage_FATEList.Controls.Add(this.menuStrip_FATEList);
+            this.tabPage_FATEList.Controls.Add(this.flowLayoutPanel_FATEList);
+            this.tabPage_FATEList.Location = new System.Drawing.Point(114, 4);
+            this.tabPage_FATEList.Name = "tabPage_FATEList";
+            this.tabPage_FATEList.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage_FATEList.Size = new System.Drawing.Size(426, 262);
+            this.tabPage_FATEList.TabIndex = 4;
+            this.tabPage_FATEList.Text = "현재 돌발";
+            this.tabPage_FATEList.UseVisualStyleBackColor = true;
+            // 
+            // menuStrip_FATEList
+            // 
+            this.menuStrip_FATEList.Location = new System.Drawing.Point(3, 3);
+            this.menuStrip_FATEList.Name = "menuStrip_FATEList";
+            this.menuStrip_FATEList.Size = new System.Drawing.Size(420, 24);
+            this.menuStrip_FATEList.TabIndex = 0;
+            this.menuStrip_FATEList.Text = "menuStrip1";
+            // 
+            // flowLayoutPanel_FATEList
+            // 
+            this.flowLayoutPanel_FATEList.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.flowLayoutPanel_FATEList.Location = new System.Drawing.Point(3, 27);
+            this.flowLayoutPanel_FATEList.Name = "flowLayoutPanel_FATEList";
+            this.flowLayoutPanel_FATEList.Size = new System.Drawing.Size(420, 232);
+            this.flowLayoutPanel_FATEList.TabIndex = 1;
             // 
             // tabPage_Log
             // 
@@ -546,6 +580,8 @@
             this.tabPage_FATE.PerformLayout();
             this.menuStrip_FATETab.ResumeLayout(false);
             this.menuStrip_FATETab.PerformLayout();
+            this.tabPage_FATEList.ResumeLayout(false);
+            this.tabPage_FATEList.PerformLayout();
             this.tabPage_Log.ResumeLayout(false);
             this.tabPage_Log.PerformLayout();
             this.panel_LogCover.ResumeLayout(false);
@@ -597,6 +633,9 @@
         internal System.Windows.Forms.NotifyIcon notifyIcon;
         private System.Windows.Forms.CheckBox checkBox_FlashWindow;
         private System.Windows.Forms.CheckBox checkBox_CheatRoullete;
+        private System.Windows.Forms.TabPage tabPage_FATEList;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel_FATEList;
+        private System.Windows.Forms.MenuStrip menuStrip_FATEList;
     }
 }
 
